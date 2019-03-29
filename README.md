@@ -4,9 +4,9 @@ This builder take your `web/index.html` ans add or edit the `base href` accordin
 The result is save in `web/index.basehref.html`
 
 
-#### Using with [AngularDart](https://webdev.dartlang.org/angular)
+#### Using with [AngularDart](https://webdev.dartlang.org/angular) or in you dart web project :
 
-Add this package to your pubspec.yaml file :
+Add this package to your `pubspec.yaml` file :
 
 ```
 dev_dependencies:
@@ -26,8 +26,10 @@ targets:
           href: '/my/application/base/href/'
 ```
 
-and build your project :
+and build your project with :
 
 ```
 pub run build_runner build
 ```
+
+The result is stored in `web/index.basehref.html` (to my knowledge there is no way to change the `index.html` in place) 
