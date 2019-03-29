@@ -10,8 +10,7 @@ Add this package to your `pubspec.yaml` file :
 
 ```
 dev_dependencies:
-  basehref:
-    git: https://github.com/alescdb/basehref
+  basehref: ^0.0.1
 ```
 
 Then create or add to `build.yaml` :
