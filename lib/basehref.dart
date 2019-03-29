@@ -1,13 +1,18 @@
 import 'dart:async';
-// test for plateform detection on https://pub.dartlang.org/
-// https://github.com/dart-lang/pub-dartlang-dart/issues/858
-import 'dart:html';
-import 'dart:js';
+import 'dart:html' as unusedHtml;
+import 'dart:js' as unusedJs;
 
 import 'package:build/build.dart';
 import 'package:html/dom.dart' as dom;
 import 'package:html/parser.dart' as parser;
 
+
+//
+// Doc comment to keep unused dart:html & dart:js for platform detection on https://pub.dartlang.org/
+// Issue: https://github.com/dart-lang/pub-dartlang-dart/issues/858
+//
+
+/// [unusedHtml] and [unusedJs]
 class BaseHrefBuilder implements Builder {
   String href;
 
