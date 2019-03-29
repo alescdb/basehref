@@ -1,5 +1,5 @@
 name: basehref
-version: 0.0.1
+version: 0.0.2
 description: builder to add or modify index.html base href tag
 author: Alexandre Del Bigio <alescdb@users.noreply.github.com>
 homepage: https://github.com/alescdb/basehref

@@ -1,4 +1,8 @@
 import 'dart:async';
+// test for plateform detection on https://pub.dartlang.org/
+// https://github.com/dart-lang/pub-dartlang-dart/issues/858
+import 'dart:html';
+import 'dart:js';
 
 import 'package:build/build.dart';
 import 'package:html/dom.dart' as dom;
