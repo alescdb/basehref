@@ -32,4 +32,5 @@ and build your project with :
 pub run build_runner build
 ```
 
-The result is stored in `web/index.basehref.html` (to my knowledge there is no way to change the `index.html` in place) 
+The result is stored in `web/index.basehref.html` (to my knowledge there is no way to change the `index.html` in place) : 
+https://stackoverflow.com/questions/52397358/dart-build-config-rename-buildstep-inputid-file
