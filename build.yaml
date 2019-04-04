@@ -4,7 +4,7 @@ builders:
     import: "package:basehref/builder.dart"
     builder_factories: ["baseHrefBuilder"]
     build_extensions: {".html": [".basehref.html"]}
-    build_to: source
+    build_to: cache
     auto_apply: root_package
     defaults:
       generate_for:

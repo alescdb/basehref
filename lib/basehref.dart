@@ -1,12 +1,15 @@
 import 'dart:async';
-//
+
 import 'package:build/build.dart';
 import 'package:html/dom.dart' as dom;
 import 'package:html/parser.dart' as parser;
+import 'package:logging/logging.dart';
+//
 
 
 class BaseHrefBuilder implements Builder {
   String href;
+  final _logger = Logger('BaseHrefBuilder');
 
   BaseHrefBuilder(BuilderOptions options) {
     if (options.config.containsKey("href")) {
@@ -29,7 +32,7 @@ class BaseHrefBuilder implements Builder {
     var head = _getFirst(document.getElementsByTagName("head"));
 
     if (head != null) {
-      print("Setting <base href=\"${href}\" />");
+      _logger.info("Setting <base href=\"${href}\">\n");
 
       var base = _getFirst(head.getElementsByTagName("base"));
       if (base == null) {
@@ -39,7 +42,10 @@ class BaseHrefBuilder implements Builder {
       base.attributes['href'] = href;
 
       var output = buildStep.inputId.changeExtension(buildExtensions['.html'][0]);
-      await buildStep.writeAsString(output, document.outerHtml);
+      _logger.info("Output file : ${output.path}\n");
+
+      /// No need to await writeAsString() [Builder]
+      buildStep.writeAsString(output, document.outerHtml);
     }
   }
 
