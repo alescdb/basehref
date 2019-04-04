@@ -1,0 +1,7 @@
+targets:
+  $default:
+    builders:
+      basehref|baseHrefBuilder:
+        enabled: true
+        options:
+          href: '/my/application/base/href/'
