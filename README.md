@@ -10,7 +10,7 @@ Add this package to your `pubspec.yaml` file :
 
 ```
 dev_dependencies:
-  basehref: ^0.0.1
+  basehref: ^0.0.4
 ```
 
 Then create or add to `build.yaml` :
@@ -28,8 +28,8 @@ targets:
 and build your project with :
 
 ```
-pub run build_runner build
+pub run build_runner build --delete-conflicting-outputs --release --output ./build
 ```
 
-The result is stored in `web/index.basehref.html` (to my knowledge there is no way to change the `index.html` in place) : 
+The result is stored in `./build/web/index.basehref.html` (to my knowledge there is no way to replace the `index.html` with a `Builder` and/or `PostProcessBuilder`) : 
 https://stackoverflow.com/questions/52397358/dart-build-config-rename-buildstep-inputid-file
