@@ -1,3 +1,6 @@
+## 0.5.1
+- Dependencies update
+
 ## 0.5.0
 - Add CHANGELOG.md
 - Add example
