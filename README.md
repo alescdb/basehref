@@ -10,7 +10,7 @@ Add this package to your `pubspec.yaml` file :
 
 ```
 dev_dependencies:
-  basehref: ^0.5.0
+  basehref: ^0.5.1
 ```
 
 Then create or add to `build.yaml` :
